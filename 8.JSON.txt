@@ -1,0 +1,6 @@
+“Questions”: [
+{“question”:   },
+{“user”: faker...  }
+];
+
+"Programming languages": [{"name": "JSON", "node.js", "C++", "JavaScript", "Python", "Java", "php", "C#"}]
