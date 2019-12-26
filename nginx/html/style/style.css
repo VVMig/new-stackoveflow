@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*.time_online{
+    position: absolute;
+    z-index: 3;
+    border:3px solid black;
+    width: 150px;
+    font-size: 32px;
+    text-align: center;
+    right: 0;
+    text-shadow: 1px 1px 3px black;
+}
+
+/*Ad section
+.ad{
+
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background-image: url(../downloads/mask.jpg);
+    background-size: cover;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 10px;
+    right:0;
+    transform: translateX(-50%);
+}
+.ad h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    font-size: 42px;
+    text-shadow: 0 0 5px black;    
+
+}
+
+
+
+.ad div{
+    display: flex;
+    position: absolute;
+    font-size: 32px;
+    background: red;
+    width: 140px;
+    height: 55px;
+    border-radius:10px;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 0 5px black;    
+}
+
+.ad div:hover{
+    transform: scale(1.1);
+}
+
+.ad a{
+    color: white;
+    text-decoration: none;
+}
+
+.ads_confirm{
+    bottom: 20px;
+    left: 53%;
+}
+
+.ads_denial{
+    bottom: 20px;
+    right: 53%;
+}*/
+

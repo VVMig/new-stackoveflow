@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Forest</title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbr{
+                margin: 0 250px 0 0;
+            }
+            .wid{
+                width: 1000px
+            }
+        </style>
+    </head>
+<body>
+    <!--#echo var="DATE_LOCAL"-->
+
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand  navbr" href="#">Stackoverflow</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline my-2 my-lg-0  wid">
+              <input class="form-control mr-sm-2 w-50" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-secondary my-2 my-sm-0 " type="submit">Search</button>
+            </form>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active mr-1">
+                        <button class="btn btn-secondary" style="background-color: red">Enter</button>
+                  </li>
+                  <li class="nav-item">
+                        <button class="btn btn-secondary" style="background-color: blue">Registration</button>
+                  </li>
+                  
+                  
+                </ul>
+
+            </div>
+            </nav>
+        </header>
+      
+      <main style="margin: 50px 0 0 0; font-size: 34px;" class="d-flex">
+         <div class="d-flex   col-md-8 bg-light mr-2" style="flex-direction: column; ">         
+          <!--#include virtual="/app/cities" -->
+          </div>
+          <div id="prog" class="col-md-3 bg-light">
+          </div> 
+
+      </main>
+        
+        
+
+    </div>
+   
+    <!--#include virtual="ad.html" -->
+
+
+    <footer class="footer mt-auto py-3" style="position: fixed; bottom: 0">
+          <div class="container">
+            <span class="text-muted">team number 11 Nekita Vova and Sergey. It's a footer</span>
+          </div>
+    </footer>
+</body>
+<template id="template">
+  <div >
+    <ul style="list-style: none ">    
+    {{#each language}}
+        <li> <a href="#">{{name}}</a></li>
+    {{/each}}
+    </ul>
+  </div>
+</template>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.2/handlebars.js"></script>
+<script>
+    var template = document.getElementById('template').innerHTML;
+    var renderAuthors = Handlebars.compile(template);
+    document.getElementById('prog').innerHTML = renderAuthors({language: [{"name": "C++"}, {"name": "JSON"}, {"name": "node.js"}, {"name": "JavaScript"}, {"name": "python"}, {"name": "Java"}, {"name": "php"}, {"name":"C#"}]});
+</script>
+<script src="style/bootstrap.min.js"></script>
+</html>
+</html>
